@@ -5,8 +5,16 @@ const express = require("express");
 const app = express();
 
 app.get("/", (req, res) => {
-  res.send("Server is Running!");
+  res.send("Server Running!");
 });
+
+app.get("/me", (req, res) => {
+    const me = {
+        Name: "Pranab Sarkar",
+        Prof: "Pragrammer"
+    }
+    res.send(me);
+  });
 
 const port = 5005;
 
@@ -17,3 +25,5 @@ app.listen(port, () => {
 
 //node index //run server
 //localhost:5005
+//nodemon index //run server(auto reload)
+//localhost:5005/a
