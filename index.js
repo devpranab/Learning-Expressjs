@@ -1,8 +1,11 @@
 //npm i express@4.18.2
 //create server
 const express = require("express");
+var cors = require("cors");
+
 //return express
 const app = express();
+app.use(cors());
 
 app.get("/", (req, res) => {
   res.send("Server Running!");
