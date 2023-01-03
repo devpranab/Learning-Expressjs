@@ -5,3 +5,4 @@
 - Use fetch to load data from server, middleware, handle cors
 - Create POST api, install postman, read post data, use body parser
 - Post data from website and read post api response
+- res.sendFile in get method

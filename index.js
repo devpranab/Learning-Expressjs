@@ -12,6 +12,11 @@ app.get("/", (req, res) => {
   res.send("Server Running!");
 });
 
+//Send as file
+app.get("/access", (req, res) => {
+  res.sendFile(__dirname + '/text.txt')
+});
+
 const users = ["Pranab", "Araj", "Miraj", "Avik"];
 
 app.get("/users/:id", (req, res) => {
